@@ -2,7 +2,6 @@
 //  CongratulationViewController.swift
 //  SampleApp
 //
-//  Created by Ishipo on 15/06/2021.
 //
 
 import UIKit

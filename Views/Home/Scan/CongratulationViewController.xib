@@ -56,15 +56,20 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="cbW-M1-7vl">
+                    <rect key="frame" x="-64" y="130" width="478" height="200"/>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="cbW-M1-7vl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="130" id="1LX-K3-QKQ"/>
                 <constraint firstItem="PKd-EU-Ci9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="CWR-L2-8md"/>
                 <constraint firstItem="vHl-3I-wib" firstAttribute="top" secondItem="Tpe-F4-T3i" secondAttribute="bottom" constant="40" id="I6Y-Za-G3n"/>
                 <constraint firstItem="a3k-TA-VQI" firstAttribute="top" secondItem="vHl-3I-wib" secondAttribute="bottom" constant="5" id="MaT-TC-Sw7"/>
                 <constraint firstItem="Tpe-F4-T3i" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Nh1-Wp-fzM"/>
                 <constraint firstItem="a3k-TA-VQI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="PHq-fF-hq5"/>
+                <constraint firstAttribute="trailing" secondItem="cbW-M1-7vl" secondAttribute="trailing" id="R0N-LR-w1a"/>
                 <constraint firstItem="Tpe-F4-T3i" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="150" id="WUE-Q3-hqg"/>
                 <constraint firstItem="vHl-3I-wib" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YWQ-da-aZx"/>
                 <constraint firstItem="PKd-EU-Ci9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="aDf-te-x59"/>
@@ -73,6 +78,7 @@
         </view>
     </objects>
     <resources>
+        <image name="BG" width="478" height="200"/>
         <image name="chevron.left" catalog="system" width="96" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

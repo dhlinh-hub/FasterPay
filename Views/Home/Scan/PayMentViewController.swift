@@ -112,6 +112,13 @@ class PayMentViewController: UIViewController {
     @objc func onback() {
         self.dismiss(animated: true, completion: nil)
     }
+    private func gotoPayIn() {
+        let vc  = PayInViewController()
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: false, completion: nil)
+        
+    }
+    
     
     func setupAlert(order : Order) {
         
@@ -133,10 +140,7 @@ class PayMentViewController: UIViewController {
                 let no = UIAlertAction(title: "No", style: .cancel, handler: nil)
                 let yes = UIAlertAction(title: "Yes", style: .default, handler: { action in
                     
-                    let vc  = PayInViewController()
-                    vc.modalPresentationStyle = .fullScreen
-                    self.present(vc, animated: false, completion: {
-                    })
+                    self.gotoPayIn()
                 })
                 arlet.addAction(no)
                 arlet.addAction(yes)
@@ -149,4 +153,5 @@ class PayMentViewController: UIViewController {
         arlet.addAction(noBT)
         self.present(arlet, animated: true, completion: nil)
     }
+    
 }

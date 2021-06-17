@@ -24,15 +24,14 @@ class WalletViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
-        
         tableView.register(UINib(nibName: "WalletTableViewCell", bundle: nil), forCellReuseIdentifier: "WalletTableViewCell")
         setupconfig()
         fetchUser()
         fetchMoney()
     }
     
-   
-   
+    
+    
     
     private func fetchUser() {
         
@@ -66,9 +65,9 @@ class WalletViewController: UIViewController {
         
         tableView.layer.cornerRadius = 40
         tableView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner  ]
-
+        
     }
-
+    
     private func fetchMoney() {
         
         let uid = Auth.auth().currentUser?.uid
@@ -77,15 +76,11 @@ class WalletViewController: UIViewController {
                 if let money = dictionary["money"] as? Int {
                     self.moneyLabel.text = "\(money)"
                 }
-                
-                
             }
             
         })
         
     }
-    
-
     
 }
 
@@ -99,7 +94,6 @@ extension WalletViewController: UITableViewDelegate , UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "WalletTableViewCell", for: indexPath) as! WalletTableViewCell
         cell.dataOder = self.data[indexPath.row]
         cell.selectionStyle = .none
-        
         
         return cell
     }
@@ -123,12 +117,12 @@ extension WalletViewController: UITableViewDelegate , UITableViewDataSource {
                 print("\(indexPath.row)")
                 tableView.deleteRows(at: [indexPath], with: .fade)
                 
-//                let uid = Auth.auth().currentUser?.uid
-//                Database.database().reference().child("user").child(uid!).child("List").child("item\(indexPath.row)").removeValue()
+                //                let uid = Auth.auth().currentUser?.uid
+                //                Database.database().reference().child("user").child(uid!).child("List").child("item\(indexPath.row)").removeValue()
             }))
             
             self.present(delete, animated: true, completion: nil)
-
+            
         }
         delete.backgroundColor = .red
         let swipeActionConfig = UISwipeActionsConfiguration(actions: [delete])

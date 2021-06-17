@@ -2,7 +2,6 @@
 //  PayInViewController.swift
 //  SampleApp
 //
-//  Created by Ishipo on 16/06/2021.
 //
 
 import UIKit
