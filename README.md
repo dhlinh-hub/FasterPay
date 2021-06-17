@@ -1,6 +1,8 @@
 # FasterPay
 
-Qr code generator template :
+
+
+Qr code generator template : https://www.qr-code-generator.com
 
 {
 "amount":50,
