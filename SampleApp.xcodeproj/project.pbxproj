@@ -34,6 +34,7 @@
 		0440DEE1267064E500AD6556 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0440DEE0267064E500AD6556 /* GoogleService-Info.plist */; };
 		0440DEE42670CC7B00AD6556 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440DEE32670CC7B00AD6556 /* Order.swift */; };
 		0459F59926731063000871DB /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459F59826731063000871DB /* Global.swift */; };
+		04798C7526E1CCD800EFD112 /* ABCView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04798C7426E1CCD800EFD112 /* ABCView.xib */; };
 		04EC6BB7266F431300CB334F /* FireBaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC6BB6266F431300CB334F /* FireBaseAuthManager.swift */; };
 		04EC6BBD266F505F00CB334F /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC6BBC266F505F00CB334F /* Profile.swift */; };
 		04EC6BC0266F593800CB334F /* TPKeyboardAvoidingSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC6BBF266F593800CB334F /* TPKeyboardAvoidingSwift.swift */; };
@@ -75,6 +76,7 @@
 		0440DEE0267064E500AD6556 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0440DEE32670CC7B00AD6556 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		0459F59826731063000871DB /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		04798C7426E1CCD800EFD112 /* ABCView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ABCView.xib; sourceTree = "<group>"; };
 		04EC6BB6266F431300CB334F /* FireBaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseAuthManager.swift; sourceTree = "<group>"; };
 		04EC6BBC266F505F00CB334F /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		04EC6BBF266F593800CB334F /* TPKeyboardAvoidingSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPKeyboardAvoidingSwift.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				0430CE80266DF1EC00C09691 /* ProfileViewController.swift */,
+				04798C7426E1CCD800EFD112 /* ABCView.xib */,
 				0430CE96266E262E00C09691 /* ProfileTableViewCell.swift */,
 				0430CE97266E262E00C09691 /* ProfileTableViewCell.xib */,
 				0430CE81266DF1EC00C09691 /* ProfileViewController.xib */,
@@ -320,6 +323,7 @@
 				0430CE70266DCD1C00C09691 /* LoginViewController.xib in Resources */,
 				0430CE74266DCD3A00C09691 /* RegisterViewController.xib in Resources */,
 				04FB62612679BC76009FC674 /* PayInViewController.xib in Resources */,
+				04798C7526E1CCD800EFD112 /* ABCView.xib in Resources */,
 				0430CE83266DF1EC00C09691 /* ProfileViewController.xib in Resources */,
 				04FB62662679DCF5009FC674 /* Assets.xcassets in Resources */,
 				04FB62682679DCF5009FC674 /* playstore.png in Resources */,
