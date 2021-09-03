@@ -13,6 +13,7 @@ struct Order: Codable {
     let title: String?
     let message: String?
     let image : String?
+    let url : String?
     
     enum CodingKeys: String, CodingKey {
         case amount = "amount"
