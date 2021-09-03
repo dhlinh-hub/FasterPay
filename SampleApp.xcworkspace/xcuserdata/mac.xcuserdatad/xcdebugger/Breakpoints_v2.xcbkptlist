@@ -16,8 +16,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "50"
             endingLineNumber = "50"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "fetchUser()"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "6843A1A4-2E05-4CA5-9A8F-463B83B10F21 - 7c70c5de075c609c"
