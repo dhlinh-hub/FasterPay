@@ -23,7 +23,7 @@ class ProfileViewController: UIViewController {
         
         data = updateProfile()
         
-        tableView.register(UINib(nibName: "Profile", bundle: nil), forCellReuseIdentifier: "ProfileTableViewCell")
+        tableView.register(UINib(nibName: "ProfileTableViewCell", bundle: nil), forCellReuseIdentifier: "ProfileTableViewCell")
         
         tableView.delegate = self
         tableView.dataSource = self
