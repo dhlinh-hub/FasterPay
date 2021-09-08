@@ -5,7 +5,6 @@
 //  Created by Ishipo on 09/06/2021.
 //
 import Foundation
-import SwiftyJSON
 
 
 struct Order: Codable {

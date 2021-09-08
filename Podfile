@@ -7,11 +7,8 @@ target 'SampleApp' do
 
   # Pods for SampleApp
 	pod 'Kingfisher'
-	pod 'Alamofire'
-	pod 'SwiftyJSON'
 	pod 'TinyConstraints'
 	pod 'FirebaseCore'
 	pod 'FirebaseAuth'
-	pod 'Firebase/Firestore'
 	pod 'Firebase/Database'
 end
