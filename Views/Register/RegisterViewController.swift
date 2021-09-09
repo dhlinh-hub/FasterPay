@@ -39,8 +39,9 @@ class RegisterViewController: UIViewController {
         super.viewDidLoad()
         
         EmailTextField.addTarget(self, action: #selector(textFieldDidChangeSelection(_:)), for: .editingChanged)
-        PasswordTextField.addTarget(self, action: #selector(textFieldDidChangeSelection(_:)), for: .editingChanged)
-        
+//        PasswordTextField.addTarget(self, action: #selector(textFieldDidChangeSelection(_:)), for: .editingChanged)
+        PasswordTextField.addTarget(self, action: #selector(textField(_:shouldChangeCharactersIn:replacementString:)), for: .editingChanged)
+//
         SignUpButton.layer.cornerRadius = 15
         LoginButton.layer.cornerRadius = 15
         SignUpButton.layer.opacity = 0.5
@@ -126,6 +127,16 @@ extension RegisterViewController : UITextFieldDelegate {
             SignUpButton.layer.opacity = 0.5
             SignUpButton.isEnabled = false
         }
+    }
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+
+        guard let preText = textField.text as NSString?, preText.replacingCharacters(in: range, with: string).count >= 6 else {
+                print("sai")
+            return false
+        }
+        print("dung")
+        return true
+      
     }
     
 }
